@@ -1,0 +1,84 @@
+/* top.css */
+
+body{
+    background-color: #6E6E6E; /* Встановлюємо колір фону для всього документа */
+}
+
+h2{
+    color: #ffffff; /* Колір тексту заголовка */
+    font: 50px "Trebuchet MS", "Lucida Sans"; /* Розмір та шрифт заголовка */
+    text-align: center; /* Вирівнюємо текст заголовка по центру */
+}
+
+#pages{
+    display: flex; /* Встановлюємо гнучкий контейнер */
+    justify-content: center; /* Центруємо по горизонталі */
+    align-items: center; /* Центруємо по вертикалі */
+    padding: 10px 0; /* Відступи зверху та знизу */
+}
+
+#pages div{
+    margin: 0 5px; /* Відступи між елементами меню */
+}
+
+#pages a {
+    font: 1px "Trebuchet MS", "Lucida Sans"; /* Розмір та шрифт посилань */
+    transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out; /* Плавна зміна кольору при наведенні */
+    border: 2px solid #000000; /* Товщина та колір межі */
+    padding: 5px 15px; /* Відступи всередині посилань */
+    background-color: #FFFFFF; /* Колір фону посилань */
+    border-radius: 10px; /* Закругленість кутів */
+    text-decoration: none; /* Видалення підкреслення */
+    color: #333; /* Колір тексту посилань */
+    font-size: 16px; /* Розмір шрифту */
+}
+
+#pages a:hover {
+    background-color: #BAFF39; /* Колір фону при наведенні */
+    color: #000000; /* Колір тексту при наведенні */
+}
+
+.rounded {
+    counter-reset: li;  /* Встановлюємо лічильник для кожного li */
+    list-style: none; /* Видаляємо маркери списку */
+    font: 14px "Trebuchet MS", "Lucida Sans"; /* Розмір та шрифт списку */
+    padding: 0; /* Зовнішні відступи */
+    text-shadow: 0 1px 0 rgba(255,255,255,.5); /* Тінь тексту */
+}
+
+.rounded li{
+    position: relative; /* Встановлюємо позицію відносно */
+    font: 30px "Trebuchet MS", "Lucida Sans"; /* Розмір та шрифт тексту */
+    padding: .4em .4em .4em 2em; /* Відступи всередині li */
+    margin: .5em 40px; /* Зовнішні відступи */
+    background: #DAD2CA; /* Колір фону li */
+    color: #444; /* Колір тексту */
+    border-radius: .3em; /* Закругленість кутів */
+    transition: .3s ease-out; /* Плавна зміна стилів при наведенні */
+}
+
+ .rounded li:hover{
+    background: #E9E4E0; /* Колір фону при наведенні */
+}
+
+.rounded li:hover::before{
+    transform: rotate(180deg); /* Обертання при наведенні */
+} 
+
+.rounded li::before{
+    content: counter(li); /* Відображення номера li */
+    counter-increment: li; /* Збільшення лічильника */
+    position: absolute; /* Встановлюємо позицію абсолютно */
+    left: -1.3em; /* Відстань зліва */
+    top: 50%; /* Позиція зверху */
+    margin-top: -1.3em; /* Вирівнюємо по вертикалі */
+    background: #8FD4C1; /* Колір фону */
+    height: 2em; /* Висота */
+    width: 2em; /* Ширина */
+    line-height: 2em; /* Висота рядка */
+    border: .3em solid white; /* Товщина та колір межі */
+    text-align: center; /* Вирівнюємо текст по центру */
+    font-weight: bold; /* Напівжирний шрифт */
+    border-radius: 5em; /* Закругленість кутів */
+    transition: all .3s ease-out; /* Плавна зміна стилів при наведенні */
+}
