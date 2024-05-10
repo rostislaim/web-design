@@ -33,10 +33,7 @@ h2{
     font-size: 16px; /* Розмір шрифту */
 }
 
-#pages a:hover {
-    background-color: #BAFF39; /* Колір фону при наведенні */
-    color: #000000; /* Колір тексту при наведенні */
-}
+
 
 .rounded {
     counter-reset: li;  /* Встановлюємо лічильник для кожного li */
