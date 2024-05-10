@@ -36,7 +36,7 @@ h2{
 
 
 .rounded {
-    counter-reset: li;  /* Встановлюємо лічильник для кожного li */
+    counter-reset: li; 
     list-style: none; /* Видаляємо маркери списку */
     font: 14px "Trebuchet MS", "Lucida Sans"; /* Розмір та шрифт списку */
     padding: 0; /* Зовнішні відступи */
